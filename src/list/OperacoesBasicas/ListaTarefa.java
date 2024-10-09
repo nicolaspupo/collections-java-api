@@ -21,6 +21,7 @@ public class ListaTarefa {
                 tarefasParaRemover.add(t);
             }
         }
+        tarefaList.removeAll(tarefasParaRemover);
     }
 
     public int obterNumeroTarefas () {
@@ -34,13 +35,12 @@ public class ListaTarefa {
     public static void main(String[] args) {
         ListaTarefa listaTarefa = new ListaTarefa();
         System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTarefas());
-        listaTarefa.adicionarTarefa("Tarefa 1");
-        listaTarefa.adicionarTarefa("Tarefa 1");
+        listaTarefa.adicionarTarefa("1");
         listaTarefa.adicionarTarefa("Tarefa 2");
-        listaTarefa.removerTarefa("Tarefa 2");
-
-
-        System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTarefas());
+        listaTarefa.adicionarTarefa("Tarefa 3");
+        listaTarefa.removerTarefa("1");
+        System.out.println(listaTarefa.obterNumeroTarefas());
+        listaTarefa.obterDescricoesTarefas();
 
 
     }
