@@ -79,19 +79,6 @@ public class ListaTarefas {
     public static void main(String[] args) {
         ListaTarefas listaTarefa = new ListaTarefas();
 
-        listaTarefa.adicionarTarefa("Correr");
-        listaTarefa.adicionarTarefa("Estudar");
-        listaTarefa.adicionarTarefa("Compras");
-        listaTarefa.exibirTarefas();
-        listaTarefa.contarTarefas();
-        listaTarefa.removerTarefa("Compras");
-        listaTarefa.exibirTarefas();
-        listaTarefa.marcarTarefaConcluida("Correr");
-        listaTarefa.marcarTarefaPendente("Estudar");
-        System.out.println(listaTarefa.obterTarefasConcluidas());
-        System.out.println(listaTarefa.obterTarefasPendentes());
-        listaTarefa.limparListaTarefas();
-        listaTarefa.exibirTarefas();
 
     }
 }
