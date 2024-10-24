@@ -20,7 +20,8 @@ public class AgendaEventos {
     }
 
     public void exibrAgenda() {
-        Map<LocalDate, Evento> eventosTreeMap = new TreeMap<>();
+        Map<LocalDate, Evento> eventosTreeMap = new TreeMap<>(eventosMap);
+        System.out.println(eventosTreeMap);
     }
 
     public void obterProximoEvento() {
@@ -40,10 +41,12 @@ public class AgendaEventos {
 
     public static void main(String[] args) {
         AgendaEventos agendaEventos = new AgendaEventos();
-        agendaEventos.adicionarEvento(LocalDate.of(2022, Month.OCTOBER, 22), "Evento 1", "Atracao 1");
-        agendaEventos.adicionarEvento(LocalDate.of(2022, 10, 25), "Evento 1", "Atracao 1");
+        agendaEventos.adicionarEvento(LocalDate.of(2024, Month.OCTOBER, 22), "Evento 1", "Atracao 1");
+        agendaEventos.adicionarEvento(LocalDate.of(2024, 10, 25), "Evento 1", "Atracao 1");
         agendaEventos.adicionarEvento(LocalDate.of(1998, Month.NOVEMBER, 20), "Evento 1", "Atracao 1");
 
         agendaEventos.exibrAgenda();
+
+        agendaEventos.obterProximoEvento();
     }
 }
