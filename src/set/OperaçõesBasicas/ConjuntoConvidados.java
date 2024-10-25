@@ -23,7 +23,7 @@ public class ConjuntoConvidados {
                 convidadoSet.remove(convidadoParaRemover);
                 break;
             } else {
-                throw new RuntimeException("Convidado inexistente");
+                throw new RuntimeException("Convidado inexistente!");
             }
         }
     }
